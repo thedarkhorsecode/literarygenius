@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tongue-in-cheek field report from the Kingdom of T4.">
+  <title>No Good Deed Goes Unpunished — Kingdom of T4</title>
+  <style>
+    :root { --ink:#18253b; --paper:#fffaf0; --wine:#9d3138; --gold:#e2ae54; --blue:#2f5873; --line:#d8c7a8; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:radial-gradient(circle at 18% 3%,#fffdf8 0 12%,transparent 28%),var(--paper); font:18px/1.72 Georgia, 'Times New Roman', serif; }
+    .masthead { min-height:680px; padding:68px max(7vw,28px); display:flex; align-items:flex-end; position:relative; overflow:hidden; background:linear-gradient(90deg,rgba(255,250,240,.98) 0%,rgba(255,250,240,.93) 38%,rgba(255,250,240,.15) 68%),url('t4-guild-hero.png') center/cover; border-bottom:8px solid var(--wine); }
+    .title { max-width:680px; position:relative; z-index:1; }
+    .kicker { margin:0 0 16px; color:var(--wine); letter-spacing:.13em; font:700 13px/1.2 Arial,sans-serif; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(48px,8vw,104px); line-height:.91; letter-spacing:-.055em; }
+    .deck { font-size:clamp(20px,2.2vw,28px); line-height:1.35; margin:25px 0 0; max-width:560px; }
+    .scroll { position:absolute; bottom:25px; right:7vw; color:#fff; font:700 12px Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; text-shadow:0 2px 5px #000; }
+    main { width:min(1180px,92vw); margin:0 auto; }
+    article { width:min(760px,100%); margin:70px auto 100px; }
+    p { margin:0 0 1.25em; }
+    .lead { font-size:clamp(22px,2.6vw,31px); line-height:1.45; }
+    .dropcap:first-letter { color:var(--wine); float:left; font-size:5.2em; line-height:.76; padding:.08em .08em 0 0; font-weight:bold; }
+    h2 { margin:2.6em 0 .65em; font-size:clamp(30px,4vw,48px); line-height:1; letter-spacing:-.035em; }
+    .sketch { margin:48px auto; padding:25px; max-width:670px; background:#fffdf7; border:2px solid var(--ink); border-radius:4px; box-shadow:8px 9px 0 var(--gold); transform:rotate(-.55deg); }
+    .sketch svg { display:block; width:100%; height:auto; }
+    .caption { margin:14px 0 0; color:#604f3e; font:italic 15px/1.35 Arial,sans-serif; }
+    .pullquote { margin:62px -9vw; padding:52px max(9vw,24px); background:var(--blue); color:#fffaf0; font-size:clamp(29px,4.6vw,54px); font-style:italic; line-height:1.14; text-align:center; }
+    .pullquote span { display:block; margin-top:16px; color:#f2d69b; font:700 12px Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
+    .list { padding:28px 32px 20px; margin:48px 0; background:#f5ead5; border-left:8px solid var(--wine); }
+    .list p { margin:0 0 .35em; font-weight:bold; }
+    .end { padding:38px 0 10px; font-size:clamp(22px,2.4vw,29px); }
+    footer { padding:34px 8vw 45px; background:var(--ink); color:#e9dfce; text-align:center; font:13px Arial,sans-serif; }
+    .ornament { color:var(--gold); font-size:24px; letter-spacing:.5em; }
+    @media (max-width:700px) { .masthead { min-height:590px; padding:42px 28px; background:linear-gradient(180deg,rgba(255,250,240,.97) 0%,rgba(255,250,240,.85) 55%,rgba(255,250,240,.15)),url('t4-guild-hero.png') 68% center/cover; } .pullquote { margin:48px -4vw; } article { margin-top:48px; } }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="title">
+      <p class="kicker">A brief field report from the Kingdom of T4</p>
+      <h1>No Good Deed<br>Goes Unpunished</h1>
+      <p class="deck">A modest study of invisible heroism, institutional memory, and the strange organisational urge to celebrate a crisis only after it has been prevented.</p>
+    </div>
+    <span class="scroll">Scroll for the report ↓</span>
+  </header>
+
+  <main>
+    <article>
+      <p class="lead dropcap">In the ancient kingdom of Vuepacs, there existed a curious guild known as T4.</p>
+      <p>The kingdom depended on T4 much in the way a human body depends on its liver: absolutely, continuously, and with very little enthusiasm to discuss it at dinner parties.</p>
+      <p>The liver, after all, is not glamorous. Nobody writes songs about a liver. No prince ever rode into battle proclaiming, “Fear not, my people, for the liver shall save us!”</p>
+      <p>Likewise, nobody ever strode into a quarterly review announcing, “Ladies and gentlemen, let us take a moment to appreciate the seventy-three obscure customer escalations prevented, the six catastrophic regressions quietly avoided, the architectural messes untangled before dawn, and the codebase which, through divine intervention and T4 stubbornness, continues functioning.”</p>
+      <p>No. Such things are considered routine.</p>
+
+      <div class="sketch">
+        <svg viewBox="0 0 650 265" role="img" aria-label="A cartoon liver in a knight helmet holding a tiny shield while courtiers admire a chart.">
+          <rect width="650" height="265" fill="#fffdf7"/>
+          <path d="M80 216 Q72 108 178 81 Q277 55 324 119 Q350 164 290 210 Q218 246 80 216" fill="#b74248" stroke="#18253b" stroke-width="6"/>
+          <path d="M106 100 Q169 38 260 86 L273 112 Q183 91 106 131Z" fill="#aeb8c4" stroke="#18253b" stroke-width="6"/>
+          <path d="M148 98 L155 54 L198 78 L219 42 L244 88" fill="none" stroke="#18253b" stroke-width="6"/>
+          <circle cx="211" cy="149" r="6" fill="#18253b"/><path d="M180 175 Q208 192 235 172" fill="none" stroke="#18253b" stroke-width="5"/>
+          <path d="M300 159 l45 -25 24 54 -42 23z" fill="#e2ae54" stroke="#18253b" stroke-width="5"/><text x="316" y="171" fill="#18253b" font-family="Arial" font-size="13" font-weight="bold">T4</text>
+          <path d="M408 210 L408 76 M408 210 L573 210 M434 188 L470 145 L510 160 L554 92" fill="none" stroke="#2f5873" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M530 101 l26 -9 -8 26" fill="none" stroke="#2f5873" stroke-width="9"/>
+          <circle cx="482" cy="62" r="26" fill="#f1d29b" stroke="#18253b" stroke-width="5"/><path d="M462 56 q20 -25 41 0" fill="none" stroke="#18253b" stroke-width="6"/><path d="M470 90 l-22 63 73 0 -18 -63" fill="#9d3138" stroke="#18253b" stroke-width="5"/>
+          <path d="M537 56 q18 -25 35 2 M546 78 q24 13 48 -2" fill="none" stroke="#18253b" stroke-width="5"/>
+          <text x="415" y="244" fill="#604f3e" font-family="Arial" font-size="14">“Excellent arrow. Who keeps the castle standing?”</text>
+        </svg>
+        <p class="caption">Figure 1. The liver, inexplicably omitted from the royal ballad.</p>
+      </div>
+
+      <h2>Two kinds of work</h2>
+      <p>In Vuepacs, there were two classes of work. The first involved grand adventures. One could invent something shiny. Launch a strategic initiative. Create a dashboard. Hold alignment sessions to align people on alignment. Present colourful slides filled with upward-pointing arrows and words like “Transformation” and “Vision.”</p>
+      <p>These deeds generated excitement.</p>
+      <p>The second involved ensuring the kingdom did not spontaneously combust. This was less celebrated. T4 belonged almost exclusively to the second class.</p>
+      <div class="list">
+        <p>A customer disaster averted? <em>Expected.</em></p>
+        <p>A critical defect resolved? <em>Necessary.</em></p>
+        <p>A release saved from imminent catastrophe? <em>Part of the job.</em></p>
+        <p>A decade of product knowledge applied at precisely the right moment to avoid six months of future pain? <em>Difficult to quantify. And thus, somehow, invisible.</em></p>
+      </div>
+      <p>The curious thing was that everyone in the kingdom agreed that product knowledge was valuable. Nobody disputed this. Every speech praised ownership. Every strategy deck celebrated accountability. Everyone nodded gravely when discussing deep expertise.</p>
+      <p>“People must own the product.”<br>“People must understand the code.”<br>“People must think end-to-end.”<br>“People must protect the customer experience.”</p>
+      <p>These declarations were repeated with almost religious devotion. Yet whenever ownership actually appeared, wearing muddy boots and carrying twenty years of accumulated complexity on its back, people quietly stepped aside and allowed T4 to carry it.</p>
+      <p>Ownership, it turned out, was admired from a distance. Like mountain climbing. Or military service. Or taxes. Excellent things for someone else to do.</p>
+
+      <section class="pullquote">“Entire presentations were constructed to prove that bad things had not happened.”<span>— a surprisingly difficult category of success</span></section>
+
+      <h2>The evidence of nothing happening</h2>
+      <p>As a result, T4 became the kingdom’s official custodian of all difficult, unpleasant, urgent, obscure, complicated, inherited, mysterious, undocumented, politically inconvenient, historically cursed, and technically hazardous work. The arrangement was widely considered efficient. For everyone except T4.</p>
+      <p>Now and then, someone would ask what value T4 provided. This question delighted the guild immensely. For it was usually posed shortly after T4 had prevented a catastrophe. A catastrophe which, by virtue of being prevented, no longer existed.</p>
+      <p>The team would then begin preparing evidence. Charts were created. Metrics were gathered. Incidents were categorized. Slides emerged. Data was assembled. Numbers were scrutinized. Hours disappeared.</p>
+      <p>One might as well attempt to quantify the value of a parachute by counting successful absences of splattering. A surgeon doesn’t receive applause for patients who didn’t die. A goalkeeper’s greatest achievements are frequently indistinguishable from nothing happening at all.</p>
+      <p>Likewise, T4’s finest work often appeared in statistics as remarkably ordinary days. And ordinary days, regrettably, never win awards.</p>
+
+      <div class="sketch">
+        <svg viewBox="0 0 650 250" role="img" aria-label="Cartoon of a knight presenting a chart labelled disasters avoided while a royal reviewer looks confused.">
+          <rect width="650" height="250" fill="#fffdf7"/>
+          <rect x="62" y="42" width="300" height="155" rx="8" fill="#e5eff2" stroke="#18253b" stroke-width="6"/>
+          <path d="M96 162 Q145 113 178 151 T239 119 T320 62" fill="none" stroke="#2f5873" stroke-width="9"/><path d="M305 72 l18 -10 -4 21" fill="none" stroke="#2f5873" stroke-width="7"/>
+          <text x="90" y="82" font-family="Arial" font-size="18" font-weight="bold" fill="#18253b">DISASTERS AVOIDED</text>
+          <text x="194" y="111" font-family="Arial" font-size="36" font-weight="bold" fill="#9d3138">0*</text>
+          <path d="M401 204 q25 -100 67 -104 q52 5 65 104" fill="#405874" stroke="#18253b" stroke-width="6"/>
+          <circle cx="470" cy="78" r="30" fill="#f1d29b" stroke="#18253b" stroke-width="6"/><path d="M442 72 q25 -35 55 0" fill="none" stroke="#18253b" stroke-width="7"/>
+          <circle cx="459" cy="82" r="4"/><circle cx="481" cy="82" r="4"/><path d="M456 101 q16 -8 30 4" fill="none" stroke="#18253b" stroke-width="4"/>
+          <path d="M537 151 q28 -43 65 -7 l-6 70 -62 0z" fill="#9d3138" stroke="#18253b" stroke-width="6"/>
+          <circle cx="570" cy="118" r="25" fill="#f1d29b" stroke="#18253b" stroke-width="6"/><path d="M545 118 q21 -31 49 -4" fill="none" stroke="#18253b" stroke-width="7"/><path d="M548 113 l-18 -9 M592 111 l19 -13" stroke="#18253b" stroke-width="4"/>
+          <text x="94" y="224" font-family="Arial" font-size="14" fill="#604f3e">* Which is, rather famously, the point.</text>
+        </svg>
+        <p class="caption">Figure 2. A quarterly review attempts to measure the non-event.</p>
+      </div>
+
+      <h2>Flowers for the forgotten plant</h2>
+      <p>At one point, the guild became sufficiently puzzled by this paradox that they voiced their concerns. The kingdom reacted quickly. Appreciations were announced. Messages were circulated. Recognition appeared. Meetings were held. Gratitude was generously distributed.</p>
+      <p>The exercise lasted approximately as long as a seasonal marketing campaign.</p>
+      <p>The team, being experts in root-cause analysis, performed one immediately. Within minutes they reached a unanimous conclusion: “This is cosmetic.” Nobody wished to say it aloud. Yet everyone understood.</p>
+      <p>Recognition that appears only after people complain bears a striking resemblance to placing flowers on a plant one has forgotten to water. The flowers are appreciated. The plant remains unconvinced.</p>
+      <p>Time passed. The announcements faded. The priorities returned. The patterns repeated. And the original hypothesis gained credibility. Perhaps nobody really cared. Or perhaps they cared in exactly the same way that people care about electricity: they become aware of its importance only when it disappears.</p>
+
+      <h2>The central mystery</h2>
+      <p>Is the problem that people cannot see value? Possibly. Human beings are notoriously attracted to visible achievements. A bridge under construction attracts more admiration than one that has stood perfectly for twenty years. A new building receives attention. The foundations receive none. Yet nobody lives on the curtains. Everyone lives on the foundations.</p>
+      <p>Or perhaps something else is occurring. Perhaps there exists in every organization a fascination with the precious. The strategic. The marketable. The visible. The things that can be announced. The things that look impressive in promotion packets and quarterly reviews.</p>
+      <p>Against such things, maintenance appears humble. Expertise appears ordinary. Reliability appears boring. The paradox, of course, is that the precious survives only because the unglamorous continues doing its work. The spotlight shines because someone remembered to keep the electricity running.</p>
+
+      <p class="end">And so T4 continues. It fixes. It investigates. It owns. It remembers. It carries institutional knowledge nobody else wishes to inherit. It solves problems that nobody notices because they cease to be problems.</p>
+      <p class="end">And when the next crisis arrives, as crises always do, the kingdom will once again look around and ask: “Who understands this system?”</p>
+      <p class="end">The answer will be exactly the same as it has always been: the guild standing quietly in the corner. The one that everyone claims is invaluable. The one perpetually asked to prove it. The one that keeps the kingdom standing while the rest debate where credit should go.</p>
+      <p class="end"><strong>After all, in Vuepacs, as in life, no good deed goes unpunished.</strong></p>
+    </article>
+  </main>
+  <footer><div class="ornament">✦ ✦ ✦</div><p>Filed from the Kingdom of T4. All dragons, dashboards, and perfectly ordinary days are fictional. Mostly.</p></footer>
+</body>
+</html>
